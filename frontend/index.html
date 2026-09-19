@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sanskrit meaning and translation powered by an IKS knowledge base and IndicTrans2 AI.">
+  <title>SanskritAI | Meaning &amp; Translation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Noto+Serif+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="SanskritAI home"><span class="brand-mark" aria-hidden="true"><span>ॐ</span></span><span class="brand-copy"><strong>Sanskrit<span>AI</span></strong><small>Ancient Wisdom. Modern Intelligence.</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#how-it-works">How It Works</a><a href="#iks">IKS</a></nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle visual theme" title="Toggle visual theme"><span aria-hidden="true">☾</span></button>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy"><p class="hero-sanskrit devanagari">॥ विद्या ददाति विनयं ॥</p><p class="eyebrow">INDIAN KNOWLEDGE SYSTEMS <span></span> 04</p><h1 id="page-title"><span>Sanskrit</span> Meaning<br>&amp; Translation</h1><p class="hero-subtitle">An IKS-based Sanskrit to English Meaning Retrieval System</p><div class="feature-strip" aria-label="Project capabilities"><div class="feature-item"><span class="feature-icon">✦</span><span><b>Explore</b><small>Ancient Knowledge</small></span></div><div class="feature-item"><span class="feature-icon">⌁</span><span><b>Powered by</b><small>AI Translation</small></span></div><div class="feature-item"><span class="feature-icon">◈</span><span><b>Rooted in</b><small>Indian Knowledge Systems</small></span></div></div></div>
+        <div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit-core">अ</div><span class="orbit-glyph glyph-one">धर्म</span><span class="orbit-glyph glyph-two">ज्ञान</span><span class="orbit-glyph glyph-three">ॐ</span></div>
+      </section>
+
+      <section class="translator-section" id="how-it-works" aria-label="Translation workspace"><div class="section-marker"><span>01</span><i></i><small>THE TRANSLATION DESK</small></div><div class="translator-grid">
+        <div class="lookup-card glass-card"><div class="card-heading"><div><p class="section-kicker">Begin your exploration</p><h2>Enter Sanskrit Word or Text</h2></div><span class="card-symbol">सं</span></div><p class="example-hint">Try a known term or a phrase <span>e.g. धर्म, कर्म, योग</span></p><form id="translation-form" novalidate><label for="sanskrit-input">Sanskrit input</label><textarea id="sanskrit-input" name="text" rows="3" placeholder="यहाँ संस्कृत शब्द या वाक्य लिखें..." autocomplete="off" spellcheck="false"></textarea><p id="form-message" class="form-message" role="alert" aria-live="polite"></p><div class="form-actions"><button class="primary-button" id="find-button" type="submit"><span>Find Meaning</span><span class="button-arrow" aria-hidden="true">↗</span></button><button class="clear-button" id="clear-button" type="button">Clear</button></div></form><div class="examples" aria-labelledby="examples-heading"><div class="examples-heading"><span id="examples-heading">Try these examples</span><span class="rule" aria-hidden="true"></span></div><div class="example-list"><button type="button" class="example-chip devanagari">धर्म</button><button type="button" class="example-chip devanagari">कर्म</button><button type="button" class="example-chip devanagari">योग</button><button type="button" class="example-chip devanagari">ज्ञान</button><button type="button" class="example-chip devanagari">शान्ति</button><button type="button" class="example-chip devanagari">सत्य</button><button type="button" class="example-chip devanagari">अहिंसा</button><button type="button" class="example-chip devanagari">आत्मा</button></div></div></div>
+        <div class="result-card glass-card" id="result-panel" hidden><div class="card-heading"><div><p class="section-kicker">The knowledge returned</p><h2>Translation Result</h2></div><span class="result-spark">✦</span></div><div class="result-content"><div class="result-row source-row"><span class="result-label">Source</span><span id="result-source" class="source-badge"></span></div><div class="result-block sanskrit-result"><span class="result-label">Sanskrit</span><p id="result-sanskrit" class="devanagari"></p></div><div class="result-block english-result"><span class="result-label">English</span><p id="result-english"></p></div><div class="result-block meaning-result"><span class="result-label">Meaning</span><p id="result-meaning"></p></div></div></div>
+        <div class="empty-state glass-card" id="empty-state" aria-hidden="true"><span class="empty-symbol devanagari">अ</span><p>Your result will appear here</p><small>Begin with a Sanskrit word above</small></div>
+      </div></section>
+
+      <section class="feature-section" id="about" aria-labelledby="features-heading"><div class="section-marker"><span>02</span><i></i><small id="features-heading">A BRIDGE BETWEEN ERAS</small></div><div class="feature-grid"><article class="info-card glass-card"><span class="info-icon">▤</span><h3>IKS Knowledge Base</h3><p>Meaning of known Sanskrit terms</p><span class="card-number">01</span></article><article class="info-card glass-card"><span class="info-icon">⌁</span><h3>AI Translation</h3><p>Powered by IndicTrans2</p><span class="card-number">02</span></article><article class="info-card glass-card"><span class="info-icon">◇</span><h3>Accurate &amp; Reliable</h3><p>Combines traditional knowledge with modern AI</p><span class="card-number">03</span></article><article class="info-card glass-card"><span class="info-icon">◎</span><h3>For Learners, Educators and Researchers</h3><p>Useful for academic and cultural exploration</p><span class="card-number">04</span></article></div></section>
+    </main>
+
+    <footer class="site-footer" id="iks"><div class="footer-brand"><span class="brand-mark small" aria-hidden="true">ॐ</span><span><strong>Sanskrit<span>AI</span></strong><small>Ancient Wisdom. Modern Intelligence.</small></span></div><p>A Step Towards Preserving Our Cultural Heritage</p><div class="footer-tags"><span>Built for Education</span><span>Inspired by India</span></div></footer>
+  </div>
+</body>
+</html>
