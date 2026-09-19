@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000/translate";
+const API_URL = "https://sanskrit-translation.onrender.com/translate";
 
 const form = document.querySelector("#translation-form");
 const input = document.querySelector("#sanskrit-input");
